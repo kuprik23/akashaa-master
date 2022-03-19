@@ -20,7 +20,7 @@ const Navbar = () => {
             <a href="#wgpt3">What is Akasha?</a>
           </p>
           <p>
-            <a href="#possibility">NFT Marketplace</a>
+            <a href="#possibility">Mint</a>
           </p>
           <p>
             <a
