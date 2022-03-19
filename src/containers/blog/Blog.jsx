@@ -15,7 +15,7 @@ const Blog = () => (
       <div className="gpt3__blog-container_groupB">
         <Article imgUrl={blog02} date="May 26, 2022" text="Fashion at akasha metaverse. a new way to express." />
         <Article imgUrl={blog03} date="June 21, 2022" text="Elevating education with more hands-on experiment at akasha." />
-        <Article imgUrl={blog04} date="April 12, 2022" text="Colloboration and work at akasha metaverse." />
+        <Article imgUrl={blog04} date="April 12, 2022" text="Collaboration and work at akasha metaverse." />
         <Article imgUrl={blog05} date="sep 26, 2022" text="The gaming experience is a breez at akasha." />
       </div>
     </div>
