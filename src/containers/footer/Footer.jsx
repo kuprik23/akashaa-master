@@ -9,7 +9,7 @@ const Footer = () => (
     </div>
 
     <div className="gpt3__footer-btn">
-      <p>Request Early Access</p>
+      <p>Early Access Soon</p>
     </div>
 
     <div className="gpt3__footer-links">
@@ -18,28 +18,19 @@ const Footer = () => (
         <p><br /> All Rights Reserved</p>
       </div>
       <div className="gpt3__footer-links_div">
-        <h4>Links</h4>
-        <p>Overons</p>
-        <p>Social Media</p>
-        <p>Counters</p>
-        <p>Contact</p>
-      </div>
-      <div className="gpt3__footer-links_div">
-        <h4>Company</h4>
-        <p>Terms & Conditions </p>
-        <p>Privacy Policy</p>
+        <h4>Twitter</h4>
         <p>Contact</p>
       </div>
       <div className="gpt3__footer-links_div">
         <h4>Get in touch</h4>
         {/* <p>Uk </p> */}
-        <p>085-132567</p>
-        <p>info@akasha.net</p>
+        <p>@akashaverse</p>
+        <p>dcl@akasha.gl</p>
       </div>
     </div>
 
     <div className="gpt3__footer-copyright">
-      <p>@2022 akasha. All rights reserved. By @En-nasryRida</p>
+      <p>@2022 Beamport Analytics. All rights reserved. By @En-nasryRida</p>
     </div>
   </div>
 );
