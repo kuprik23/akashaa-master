@@ -19,7 +19,7 @@ const Team = () => (
                     <img src={Person1} alt="UI Designer" />
                     <div className="member-info">
                       <h3>Alan Solis</h3>
-                      <p>UI Designer</p>
+                      <p>CMO</p>
                     </div>
                   </div>
                 </div>
@@ -38,11 +38,11 @@ const Team = () => (
                   <div>
                     <img
                       src={Martin}
-                      alt="UI Designer"
+                      alt="CMO"
                     />
                     <div className="member-info">
                       <h3>Martin Kuprik</h3>
-                      <p>CEO && Founder</p>
+                      <p>CEO & Founder</p>
                     </div>
                   </div>
                 </div>
@@ -58,7 +58,7 @@ const Team = () => (
                 <div>
                   Akasha Metaverse Team marries deep VR industry experience with
                   passion for virtual social and its users. We aim to combine
-                  Virtual world with professional-quality contentt.Akasha
+                  Virtual world with professional-quality content. Akasha
                   Metaverse Team brings a wealth of experience to the space, to
                   build highly-engaging experiences in the metaverse.
                 </div>
