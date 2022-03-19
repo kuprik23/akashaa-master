@@ -38,7 +38,7 @@ const Header = () => (
         </div>
       </div>
       <p>
-        Connection are evolving and so should we. <br /> Akasha Metaverse is a
+        Connections are evolving and so should we. <br /> Akasha Metaverse is a
         virtual heaven where the possibilities are limitless.
       </p>
       <div className="gpt3__header-content__input">
