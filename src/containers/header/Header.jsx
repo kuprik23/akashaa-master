@@ -8,7 +8,7 @@ import './header.css';
 const Header = () => (
   <div className="gpt3__header section__padding" id="home">
     <div className="gpt3__header-content">
-      <h1 className="gradient__text">Akasha Metaverse</h1>
+      <h1 className="gradient__text">Akasha Multiverse</h1>
       <div className="wrapper">
         <div className="video-main">
           <div className="promo-video">
@@ -43,7 +43,7 @@ const Header = () => (
       </p>
       <div className="gpt3__header-content__input">
         <button type="button" className="access-button">
-          Access The Metaverse
+          Join Discord
         </button>
       </div>
       <div className="gpt3__header-content__people">
