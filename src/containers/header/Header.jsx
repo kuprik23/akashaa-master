@@ -45,8 +45,13 @@ const Header = () => (
         <button type="button" className="access-button">
           Join Discord
         </button>
-      </div>
-      <div className="gpt3__header-content__people">
+    type="button"
+    onClick={(e) => {
+      e.preventDefault();
+      window.location.href='http://google.com';
+      }}
+  
+     className="gpt3__header-content__people">
         <img src={people} />
         <p>1,600 requested a visit to akasha in last 24h</p>
       </div>
