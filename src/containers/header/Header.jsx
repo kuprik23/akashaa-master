@@ -44,10 +44,6 @@ const Header = () => (
       <div className="gpt3__header-content__input">
         <button type="button" className="access-button">
           Join Discord
-          var button = document.getElementById("button");
-button.addEventListener"click", function ()
-  window.location.href = "https://discord.com/";
-;
         </button>
       </div>
       <div className="gpt3__header-content__people">
