@@ -9,13 +9,13 @@ const Footer = () => (
     </div>
 
     <div className="gpt3__footer-btn">
-      <p>Early Access Soon</p>
+    <a href="https://akasha.gl/akasha2" class="tm-btn tm-style1 tm-with-border"  target="_blank">Early Access</a>
     </div>
 
     <div className="gpt3__footer-links">
       <div className="gpt3__footer-links_logo">
         {/* <img src={gpt3Logo} alt="gpt3_logo" /> */}
-        <a href="https://akasha.gl/akasha2" class="tm-btn tm-style1" target="_blank">Learn more</a>
+        <p><br /> All Rights Reserved</p>
       </div>
       <div className="gpt3__footer-links_div">
         <h4>Twitter</h4>
