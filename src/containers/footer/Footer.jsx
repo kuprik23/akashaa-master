@@ -8,6 +8,7 @@ const Footer = () => (
       <h1 className="gradient__text">Do you want to step in to the future before others</h1>
     </div>
 
+<p></p>
     <div className="gpt3__footer-btn">
     <a target="_blank" href="https://akasha.gl/akasha2"> <button id="bt" >Learn More</button> </a>
     </div>
@@ -15,7 +16,7 @@ const Footer = () => (
     <div className="gpt3__footer-links">
       <div className="gpt3__footer-links_logo">
         {/* <img src={gpt3Logo} alt="gpt3_logo" /> */}
-        <p><br /> All Rights Reserved</p>
+        <p><br />WEB 3.0</p>
       </div>
       <div className="gpt3__footer-links_div">
         <h4>Twitter</h4>
