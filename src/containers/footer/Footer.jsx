@@ -9,7 +9,7 @@ const Footer = () => (
     </div>
 
     <div className="gpt3__footer-btn">
-    <a href="https://akasha.gl/akasha2" class="tm-btn tm-style1 tm-with-border"  target="_blank">Early Access</a>
+    <a target="_blank" href="https://akasha.gl/akasha2"> <button id="bt" >Learn More</button> </a>
     </div>
 
     <div className="gpt3__footer-links">
