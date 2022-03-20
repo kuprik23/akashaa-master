@@ -42,7 +42,7 @@ const Header = () => (
         virtual heaven where the possibilities are limitless.
       </p>
       <div className="gpt3__header-content__input">
-      <a target="_blank" href="https://discord.com/invite/MyDFxKe4Af"> <button id="bt" >Join discord</button> </a>
+      <a target="_blank" href="https://discord.gg/td3yVUKNB8"> <button id="bt" >Join discord</button> </a>
         
       </div>
       <div className="gpt3__header-content__people">
