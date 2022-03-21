@@ -26,7 +26,7 @@ const Footer = () => (
       <div className="gpt3__footer-links_div">
         <h4>Get in touch</h4>
         {/* <p>Uk </p> */}
-        <a target="_blank" href="https://discord.gg/td3yVUKNB8"> <button id="bt" >Join discord</button> </a>
+        <a target="_blank" href="https://twitter.com/akashaverse"> <button id="bt" >Twitter</button> </a>
         <p>dcl@akasha.gl</p>
       </div>
     </div>
