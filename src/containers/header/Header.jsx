@@ -47,7 +47,7 @@ const Header = () => (
       </div>
       <div className="gpt3__header-content__people">
         <img src={people} />
-        <p>200+ support the server & join discord</p>
+        <p>Support Server & Join Community</p>
       </div>
     </div>
 
