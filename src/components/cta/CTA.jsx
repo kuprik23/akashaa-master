@@ -8,7 +8,7 @@ const CTA = () => (
       <h3>Register Today & start exploring the endless possibilities.</h3>
     </div>
     <div className="gpt3__cta-btn">
-      <button type="button">Get on the White List</button>
+    <a target="_blank" href="https://forms.gle/RmPfXnLzgbuYAqPY6"> <button id="bt" >Get on the WHITE LIST</button> </a>
     </div>
   </div>
 );
