@@ -9,9 +9,10 @@ const Footer = () => (
     </div>
 
 <p>
-    <div className="gpt3__footer-btn">
-    <a target="_blank" href="https://akasha.gl/akasha2"> <button id="bt" >Learn More</button> </a>
+<div className="gpt3__cta-btn">
+    <a target="_blank" href="https://forms.gle/RmPfXnLzgbuYAqPY6"> <button id="bt" >Get on the WHITE LIST</button> </a>
     </div>
+  </div>
     </p>
 
     <div className="gpt3__footer-links">
