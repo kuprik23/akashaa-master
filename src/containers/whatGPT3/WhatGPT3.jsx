@@ -9,7 +9,7 @@ const WhatGPT3 = () => (
     </div>
     <div className="gpt3__whatgpt3-heading">
       <h1 className="gradient__text">Virtual Heaven</h1>
-      <p>Explore Akasha</p>
+      <a target="_blank" href="https://forms.gle/RmPfXnLzgbuYAqPY6"> <button id="bt" >Get on the WHITE LIST</button> </a>
     </div>
     <div className="gpt3__whatgpt3-container">
       <Feature title="Connection" text="Virtual Reality is the future of connection, the distance will vanish you can connect and share with others in a way you couldn't imagined before." />
