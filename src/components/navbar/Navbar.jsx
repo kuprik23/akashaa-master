@@ -57,8 +57,7 @@ const Navbar = () => {
       </Stack>
     </Paper>
   );
-};
-
+;
     <div className="gpt3__navbar">
       <div className="gpt3__navbar-links">
         <div className="gpt3__navbar-links_logo">
@@ -131,7 +130,7 @@ const Navbar = () => {
         )}
       </div>
     </div>
-  );
+  
 };
 
 export default Navbar;
