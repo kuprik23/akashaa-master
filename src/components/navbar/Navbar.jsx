@@ -2,9 +2,30 @@ import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../logo.png';
 import './navbar.css';
+import {ethers} from 'ethers'
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const connectWalletHandler = () => {
+		if (window.ethereum && window.ethereum.isMetaMask) {
+			console.log('MetaMask Here!');
+
+			window.ethereum.request({ method: 'eth_requestAccounts'})
+			.then(result => {
+				accountChangedHandler(result[0]);
+				setConnButtonText('Wallet Connected');
+				getAccountBalance(result[0]);
+			})
+			.catch(error => {
+				setErrorMessage(error.message);
+			
+			});
+
+		} else {
+			console.log('Need to install MetaMask');
+			setErrorMessage('Please install MetaMask browser extension to interact');
+		}
+	}
 
   return (
     <div className="gpt3__navbar">
