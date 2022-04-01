@@ -5,22 +5,6 @@ import './navbar.css';
 import { ethers } from "ethers";
 
 const Navbar = () => {
-  const [toggleMenu, setToggleMenu] = useState(false);
-  { Button, Paper, Stack, Typography } from "@mui/material";
-
-
-const MetaConnect = () => {
-  const [errorMessage, setErrorMessage] = useState(null);
-  const [account, setAccount] = useState(null);
-  const [balance, setBalance] = useState(null);
-
-  useEffect(() => {
-    if (window.ethereum) {
-      window.ethereum.on("accountsChanged", accountsChanged);
-      window.ethereum.on("chainChanged", chainChanged);
-    }
-  }, []);
-
   const connectHandler = async () => {
     if (window.ethereum) {
       try {
