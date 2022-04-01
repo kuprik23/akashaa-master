@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../logo.png';
 import './navbar.css';
-import { ethers } from "ethers";
 
 const Navbar = () => {
   const connectHandler = async () => {
