@@ -20,7 +20,7 @@ const Navbar = () => {
             <a href="#wgpt3">What is Akasha?</a>
           </p>
           <p>
-          <a href="https://akasha-git-master-ridaen-nasry.vercel.app/"> <button id="bt" >Mint</button> </a>
+          <a href="https://akasha-git-master-ridaen-nasry.vercel.app/"> <button id="bt" >Minty</button> </a>
           </p>
           <p>
             <a
