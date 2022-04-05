@@ -2,6 +2,22 @@ import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../logo.png';
 import './navbar.css';
+import detectEthereumProvider from '@metamask/detect-provider';
+
+document.getElementById('connectButton', connect);
+
+function connect() {
+  ethereum
+    .request({ method: 'eth_requestAccounts' })
+    .then(handleAccountsChanged)
+    .catch((error) => {
+      if (error.code === 4001) {        
+        console.log('Please connect to MetaMask.');
+      } else {
+        console.error(error);
+      }
+    });
+}
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -73,7 +89,7 @@ const Navbar = () => {
               </p>
             </div>
             <div className="gpt3__navbar-menu_container-links-sign">
-              <button type="button">Connect Wallet</button>
+              <clickbutton type="connectButton">Connect Wallet</clickbutton>
             </div>
           </div>
         )}
