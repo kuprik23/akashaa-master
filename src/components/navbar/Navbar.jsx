@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../logo.png';
 import './navbar.css';
+import detectEthereumProvider from '@metamask/detect-provider';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const provider = await detectEthereumProvider();
 
   return (
     <div className="gpt3__navbar">
@@ -36,7 +38,12 @@ const Navbar = () => {
           </p>
         </div>
       </div>
-      <div className="gpt3__navbar-sign">
+      if (provider) {startApp} window.ethereum
+  // From now on, this should always be true:
+  // provider === window.ethereum
+  startApp(provider);
+  }else {console.log('Please install MetaMask!')}
+<div className="gpt3__navbar-sign">
         <button type="button">Connect Wallet</button>
       </div>
       <div className="gpt3__navbar-menu">
