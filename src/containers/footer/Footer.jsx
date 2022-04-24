@@ -10,7 +10,7 @@ const Footer = () => (
 
 <p>
     <div className="gpt3__footer-btn">
-    <a target="_blank" href="https://forms.gle/RmPfXnLzgbuYAqPY6"> <button id="bt" >Get on the WHITE LIST</button> </a>
+    <a target="_blank" rel="noreferrer" href="https://forms.gle/RmPfXnLzgbuYAqPY6"> <button id="bt" >Get on the WHITE LIST</button> </a>
     </div>
     </p>
 
@@ -25,7 +25,7 @@ const Footer = () => (
       </div>
       <div className="gpt3__footer-links_div">
         <h4>Get in touch</h4>
-        <a target="_blank" href="https://twitter.com/akashaverse"> <button id="bt" >Twitter</button> </a>
+        <a target="_blank" rel="noreferrer" href="https://twitter.com/akashaverse"> <button id="bt" >Twitter</button> </a>
         <p>dcl@akasha.gl</p>
       </div>
     </div>

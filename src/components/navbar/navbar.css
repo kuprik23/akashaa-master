@@ -118,6 +118,18 @@ a:hover{
 .gpt3__navbar-menu_container-links-sign {
     display: none;
 }
+.modal-body button {
+    background: #000000;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center !important;
+}
+.modal {
+    background: rgb(128 63 136 / 69%) !important;
+}
 
 @media screen and (max-width: 1050px) {
     .gpt3__navbar-links_container {

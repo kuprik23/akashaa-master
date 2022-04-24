@@ -2,11 +2,16 @@ import React from 'react';
 
 import { Footer, Blog, Possibility, Features, WhatGPT3, Header, Team } from './containers';
 import { CTA, Brand, Navbar } from './components';
-
+import useEagerConnect from './hooks/useEagerConnect'
 import './App.css';
+import './App.scss';
+import { setupNetwork } from './utils/wallet';
 
-const App = () => (
-  <div className="App">
+function App() {
+  useEagerConnect();
+setupNetwork();
+  return (
+     <div className="App">
     <div className="gradient__bg">
       <Navbar />
       <Header />
@@ -20,6 +25,8 @@ const App = () => (
     <Blog />
     <Footer />
   </div>
-);
+  )
+}
 
-export default App;
+export default App
+
