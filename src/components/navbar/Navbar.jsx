@@ -10,16 +10,20 @@ import Minting from "../../hooks/Minting";
 import { ToastContainer, toast } from "react-toastify";
 import Loader from "../../hooks/loader";
 import "react-toastify/dist/ReactToastify.css";
+import useWeb3 from '../../hooks/useWeb3';
+import environment from '../../utils/Environment';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const { login, logout } = useAuth();
   const { account, chainId } = useWeb3React();
   const [shownav, setShowNav] = useState(false)
+  const [downloadable, setDownloadable] = useState(false)
   console.log('ddddddddddddddddddddddd====', account)
   const [open, Close] = useState(true);
   const [mainLoader, setMainLoader] = useState(false);
   const { userMinting } = Minting();
+  const web3 = useWeb3();
 
   const connectMetamask = () => {
     localStorage.setItem('connectorId', 'injected');
@@ -81,20 +85,20 @@ const Navbar = () => {
         const res = await userMinting(1);
         setMainLoader(false);
         if (res?.code === 4001) {
-            await setMainLoader(false);
-            await toast.error("User denied transaction.");
+          await setMainLoader(false);
+          await toast.error("User denied transaction.");
         } else if (res?.code === 4002) {
-            await setMainLoader(false);
-            await toast.error("Transaction failed.");
-        }else{
+          await setMainLoader(false);
+          await toast.error("Transaction failed.");
+        } else {
           toast.success("Minting Successful");
         }
         console.log('res=======', res)
-       
+
       } catch (error) {
         setMainLoader(false);
         toast.error(error.message);
-       
+
         console.log('mintoerror====>', error)
       }
     } else {
@@ -102,9 +106,26 @@ const Navbar = () => {
     }
   }
 
+  const checkBalance = async () => {
+    console.log("$$$")
+    if (account) {
+      const contractAddress = environment.musabContract;
+      const contract = SkeletonContract(contractAddress, web3);
+      let balance = await contract.methods.balanceOf().call();
+      if (balance > 0) {
+        setDownloadable(true)
+      } else {
+        setDownloadable(false)
+      }
+    } else {
+      login("injected")
+
+    }
+  }
+
   useEffect(() => {
     // login("injected");
-
+    checkBalance();
     console.log("chainId", chainId);
     if (chainId != "1") {
       // toast.error("Select Ethereum Network");
@@ -112,7 +133,7 @@ const Navbar = () => {
   }, [account])
   return (
     <>
-    {mainLoader && <Loader />}
+      {mainLoader && <Loader />}
       <div className="gpt3__navbar">
         <ToastContainer />
 
@@ -128,7 +149,7 @@ const Navbar = () => {
               <a href="#wgpt3">What is Akasha?</a>
             </p>
             <p>
-              <button id="bt" className='bg-transparent border-0'  onClick={minto}>Minty</button>
+              <button id="bt" className='bg-transparent border-0' onClick={minto}>Minty</button>
             </p>
             <p>
               <a
@@ -146,6 +167,12 @@ const Navbar = () => {
         </div>
         <div className="gpt3__navbar-sign">
           <button type="button" className={account && 'bg-success'} data-toggle="modal" data-target="#exampleModalmerchf">{account ? "Disconnect Wallet" : "Connect Wallet"}</button>
+          {
+            downloadable ?
+              <button type="button" className={'bg-info'} >Download</button>
+              :
+              ""
+          }
         </div>
         <div className="gpt3__navbar-menu">
           {toggleMenu ? (
@@ -181,7 +208,7 @@ const Navbar = () => {
                 </p>
               </div>
               <div className="gpt3__navbar-menu_container-links-sign">
-                <button type="button" data-toggle="modal" className={account&&'bg-success'} data-target="#exampleModalmerchf">{account ? "Disconnect Wallet" : "Connect Wallet"}</button>
+                <button type="button" data-toggle="modal" className={account && 'bg-success'} data-target="#exampleModalmerchf">{account ? "Disconnect Wallet" : "Connect Wallet"}</button>
               </div>
             </div>
           )}
